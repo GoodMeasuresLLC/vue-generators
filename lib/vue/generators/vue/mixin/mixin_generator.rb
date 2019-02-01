@@ -4,7 +4,7 @@ module Vue
 
 
     def generate_mixin
-      template 'Mixin.template', Rails.root.join("app", "javascript", "components", *path, "#{mixin_name}.js")
+      template 'Mixin.template', Rails.root.join("app", "javascript", "mixins", *path, "#{mixin_name}.js")
     end
 
     private

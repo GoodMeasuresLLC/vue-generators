@@ -81,7 +81,7 @@ export default {
 rails g vue:mixin MyMixin
 ```
 
-*This will generate `app/javascript/components/MyMixin.js`*
+*This will generate `app/javascript/mixins/MyMixin.js`*
 
 ```JavaScript
 export default {

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    vue-generators (0.1.0)
+    vue-generators (0.1.1)
       rails (~> 5.2.0)
 
 GEM
