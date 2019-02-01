@@ -1,0 +1,8 @@
+Description:
+    Generates a blank vue component
+
+Example:
+    rails generate vue:component Thing
+
+    This will create:
+        app/javascript/components/Thing.vue
