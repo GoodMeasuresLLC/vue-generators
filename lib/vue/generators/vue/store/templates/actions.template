@@ -1,0 +1,18 @@
+// https://vuex.vuejs.org/guide/actions.html
+//
+// Actions are similar to mutations, the differences being that:
+//  - Instead of mutating the state, actions commit mutations.
+//  - Actions can contain arbitrary asynchronous operations.
+//
+// Action handlers receive a context object which exposes the same set of
+// methods/properties on the store instance, so you can call context.commit to
+// commit a mutation, or access the state and getters via context.state and
+// context.getters. We can even call other actions with context.dispatch
+//
+// Mutations have to be synchronous. Actions don't
+export const actions = {
+  // // this.$store.dispatch('<%= store_name %>/createPost', { .. } )
+  // createPost(context, payload) {
+  //   ...
+  // },
+}

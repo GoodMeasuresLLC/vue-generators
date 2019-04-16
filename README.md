@@ -1,6 +1,6 @@
 # Vue::Generators
-vue-generators is an opinionated library for generating Vue components and mixins
-for a Rails project.
+vue-generators is an opinionated library for generating Vue components, mixins,
+and stores for a Rails project.
 
 ## Usage
 
@@ -8,6 +8,7 @@ for a Rails project.
 ```bash
 rails g vue:component -h
 rails g vue:mixin -h
+rails g vue:store -h
 ```
 
 ### Generate a component
@@ -16,7 +17,9 @@ rails g vue:mixin -h
 rails g vue:component ButtonCounter
 ```
 
-*This will generate `app/javascript/components/ButtonCounter.vue`*
+**This will generate:**
+
+*`app/javascript/components/ButtonCounter.vue`*
 ```JavaScript
 <template>
   <div>
@@ -80,8 +83,9 @@ export default {
 ```bash
 rails g vue:mixin MyMixin
 ```
+**This will generate:**
 
-*This will generate `app/javascript/mixins/MyMixin.js`*
+*`app/javascript/mixins/MyMixin.js`*
 
 ```JavaScript
 export default {
@@ -120,6 +124,59 @@ export default {
   },
 }
 ```
+### Generate a store
+
+```bash
+rails g vue:store Application
+```
+
+**This will generate:**
+
+*`app/javascript/application/store/Store.js`*
+```JavaScript
+import { actions }    from "./actions"
+import { getters }    from "./getters"
+import { mutations }  from "./mutations"
+import { state }      from "./state"
+
+export default {
+  namespaced: true,
+
+  actions:    actions,
+  getters:    getters,
+  mutations:  mutations,
+  state:      state
+}
+```
+
+*`app/javascript/application/store/actions.js`*
+```JavaScript
+export const actions = {
+
+}
+```
+
+*`app/javascript/application/store/getters.js`*
+```JavaScript
+export const getters = {
+
+}
+```
+
+*`app/javascript/application/store/mutations.js`*
+```JavaScript
+export const mutations = {
+}
+
+```
+
+*`app/javascript/application/store/state.js`*
+```JavaScript
+export const state = {
+
+}
+```
+
 
 ## Installation
 Add this line to your application's Gemfile:

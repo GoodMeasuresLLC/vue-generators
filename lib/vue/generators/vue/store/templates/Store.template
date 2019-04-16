@@ -1,0 +1,27 @@
+import { actions }    from "./actions"
+import { getters }    from "./getters"
+import { mutations }  from "./mutations"
+import { state }      from "./state"
+
+// https://vuex.vuejs.org/guide/
+//
+// At the center of every Vuex application is the store. A "store" is basically a
+// container that holds your application state. There are two things that make a
+// Vuex store different from a plain global object:
+//
+// Vuex stores are reactive. When Vue components retrieve state from it, they will
+// reactively and efficiently update if the store's state changes.
+//
+// You cannot directly mutate the store's state. The only way to change a store's
+// state is by explicitly committing mutations. This ensures every state change
+// leaves a track-able record, and enables tooling that helps us better understand
+// our applications
+//
+export default {
+  namespaced: true,
+
+  actions:    actions,
+  getters:    getters,
+  mutations:  mutations,
+  state:      state
+}
