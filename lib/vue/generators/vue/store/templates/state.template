@@ -1,0 +1,12 @@
+// https://vuex.vuejs.org/guide/state.html
+//
+// Vuex uses a single state tree - that is, this single object contains all your
+// application level state and serves as the "single source of truth.
+//
+export const state = {
+  // // this.$store.state.<%= store_name %>.posts
+  // posts: [],
+
+  // // this.$store.state.<%= store_name %>.counter
+  // counter: 0
+}

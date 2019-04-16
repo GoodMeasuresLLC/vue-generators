@@ -1,0 +1,15 @@
+// https://vuex.vuejs.org/guide/getters.html
+//
+// Getters provide a way to re-use a computation of derived state.  Getters
+// are like computed properties for stores.  A getter's result is cached based
+// on its dependencies, and will only re-evaluate when some of its dependencies
+// have changed.
+//
+export const getters = {
+  // /**
+  //  * getters['<%= store_name %>/counter']
+  //  */
+  // counter: (state) => () => {
+  //   return state.counter
+  // },
+}

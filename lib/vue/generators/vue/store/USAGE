@@ -1,0 +1,23 @@
+Description:
+    Generates a namespaced, blank Vuex store split into multiple files
+
+Example:
+    rails generate vue:store Application
+
+    This will create:
+        app/javascript/application/store/Store.js
+        app/javascript/application/store/actions.js
+        app/javascript/application/store/getters.js
+        app/javascript/application/store/mutations.js
+        app/javascript/application/store/state.js
+
+Example:
+    rails generate vue:store pets/Kittens
+
+    This will create:
+        app/javascript/pets/kittens/store/Store.js
+        app/javascript/pets/kittens/store/actions.js
+        app/javascript/pets/kittens/store/getters.js
+        app/javascript/pets/kittens/store/mutations.js
+        app/javascript/pets/kittens/store/state.js
+
