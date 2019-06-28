@@ -1,0 +1,9 @@
+Description:
+    Generates a stub pack
+
+Example:
+    rails generate vue:pack blog
+
+    This will create:
+      app/javascript/packs/blog.js
+

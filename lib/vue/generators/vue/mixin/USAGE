@@ -5,5 +5,5 @@ Example:
     rails generate vue:mixin Thing
 
     This will create:
-        app/javascript/mixins/Thing.vue
+        app/javascript/mixins/Thing.js
 

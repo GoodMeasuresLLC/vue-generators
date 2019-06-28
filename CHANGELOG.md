@@ -1,3 +1,7 @@
+## 0.1.3
+* Add pack generation
+* Change destination of stores to app/javascript/stores/
+
 ## 0.1.2
 
 * Add store generation

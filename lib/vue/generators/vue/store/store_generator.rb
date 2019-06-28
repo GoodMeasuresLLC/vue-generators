@@ -6,7 +6,7 @@ module Vue
       [
         'Store', 'actions', 'getters', 'mutations', 'state'
       ].each do |template|
-        template "#{template}.template", Rails.root.join("app", "javascript", *path, "#{template}.js")
+        template "#{template}.template", Rails.root.join("app", "javascript", "stores", *path, "#{template}.js")
       end
     end
 
@@ -18,7 +18,7 @@ module Vue
     end
 
     def path
-      name.split("/").map {|part| part.underscore.tr('_', '-') } + ['store']
+      name.split("/").map {|part| part.underscore.tr('_', '-') }
     end
   end
 end

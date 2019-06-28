@@ -1,5 +1,5 @@
 # Vue::Generators
-vue-generators is an opinionated library for generating Vue components, mixins,
+vue-generators is an opinionated library for generating Vue components, mixins, packs,
 and stores for a Rails project.
 
 ## Usage
@@ -9,6 +9,7 @@ and stores for a Rails project.
 rails g vue:component -h
 rails g vue:mixin -h
 rails g vue:store -h
+rails g vue:pack -h
 ```
 
 ### Generate a component
@@ -124,6 +125,43 @@ export default {
   },
 }
 ```
+
+### Generate a pack
+```bash
+rails g vue:pack admin
+```
+
+**This will generate:**
+*`app/javascript/packs/admin.js`
+```JavaScript
+import VueRouter from 'vue-router'
+
+// Routing
+const router = new VueRouter({
+})
+
+// Vuex
+const store = new Vuex.Store({
+
+})
+
+document.addEventListener("DOMContentLoaded", () => {
+  Vue.use(VueRouter)
+
+  const el = document.getElementById("root")
+
+  const app = new Vue({
+    el: el,
+    template: "<div><router-view /></div>",
+    components: {},
+    router,
+    store,
+    mounted() {
+    },
+  })
+})
+
+```
 ### Generate a store
 
 ```bash
@@ -132,7 +170,7 @@ rails g vue:store Application
 
 **This will generate:**
 
-*`app/javascript/application/store/Store.js`*
+*`app/javascript/stores/application/Store.js`*
 ```JavaScript
 import { actions }    from "./actions"
 import { getters }    from "./getters"
@@ -149,28 +187,28 @@ export default {
 }
 ```
 
-*`app/javascript/application/store/actions.js`*
+*`app/javascript/stores/application/actions.js`*
 ```JavaScript
 export const actions = {
 
 }
 ```
 
-*`app/javascript/application/store/getters.js`*
+*`app/javascript/stores/application/getters.js`*
 ```JavaScript
 export const getters = {
 
 }
 ```
 
-*`app/javascript/application/store/mutations.js`*
+*`app/javascript/stores/application/mutations.js`*
 ```JavaScript
 export const mutations = {
 }
 
 ```
 
-*`app/javascript/application/store/state.js`*
+*`app/javascript/stores/application/state.js`*
 ```JavaScript
 export const state = {
 

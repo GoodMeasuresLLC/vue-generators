@@ -5,19 +5,19 @@ Example:
     rails generate vue:store Application
 
     This will create:
-        app/javascript/application/store/Store.js
-        app/javascript/application/store/actions.js
-        app/javascript/application/store/getters.js
-        app/javascript/application/store/mutations.js
-        app/javascript/application/store/state.js
+        app/javascript/stores/application/Store.js
+        app/javascript/stores/application/actions.js
+        app/javascript/stores/application/getters.js
+        app/javascript/stores/application/mutations.js
+        app/javascript/stores/application/state.js
 
 Example:
     rails generate vue:store pets/Kittens
 
     This will create:
-        app/javascript/pets/kittens/store/Store.js
-        app/javascript/pets/kittens/store/actions.js
-        app/javascript/pets/kittens/store/getters.js
-        app/javascript/pets/kittens/store/mutations.js
-        app/javascript/pets/kittens/store/state.js
+        app/javascript/stores/pets/kittens/Store.js
+        app/javascript/stores/pets/kittens/actions.js
+        app/javascript/stores/pets/kittens/getters.js
+        app/javascript/stores/pets/kittens/mutations.js
+        app/javascript/stores/pets/kittens/state.js
 

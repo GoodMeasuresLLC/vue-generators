@@ -1,0 +1,28 @@
+import VueRouter from 'vue-router'
+
+// Routing
+const router = new VueRouter({
+})
+
+// Vuex
+const store = new Vuex.Store({
+
+})
+
+document.addEventListener("DOMContentLoaded", () => {
+  Vue.use(VueRouter)
+
+  const el = document.getElementById("root")
+
+  const app = new Vue({
+    el: el,
+    template: "<div><router-view /></div>",
+    components: {},
+    router,
+    store,
+    mounted() {
+    },
+  })
+})
+
+
